@@ -7,7 +7,7 @@ public class Main {
 
     int i, j;
     int max = 0;
-    int row = 1, col = 1;
+    int col = 1, row = 1;
 
     int[][] arr = new int[9][9];
 
@@ -21,13 +21,13 @@ public class Main {
       for (j = 0; j < 9; j++) {
         if (arr[i][j] > max) {
           max = arr[i][j];
-          row = i + 1;
-          col = j + 1;
+          col = i + 1;
+          row = j + 1;
         }
       }
     }
 
     System.out.println(max);
-    System.out.println(row + " " + col);
+    System.out.println(col + " " + row);
   }
 }
